@@ -1,14 +1,20 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Calculator Vat 7 %
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content padding>
+  <ion-avatar class="avatars">
+    <img src="../../assets/icon/64x64.png">
+  </ion-avatar>
+  <ion-item>
+    <ion-label>จำวนวเงิน : </ion-label>
+    <ion-input type="number" [(ngModel)]="money"></ion-input>
+  </ion-item>
+  <ion-button expand="block" (click)="calculate(money)">คำนวณ</ion-button>
+  <p class="vat-title">ผลลัพธ์</p>
+  <p class="vat-amount">{{ vatResult }}</p>
 </ion-content>

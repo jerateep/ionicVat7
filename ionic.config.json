@@ -1,5 +1,7 @@
 {
   "name": "Vat7Calculator",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
